@@ -1,4 +1,4 @@
-/* Estilos do Login e do Dashboard */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ADD8E6; /* Azul Claro */
+    background-color: #ADD8E6; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-.container, .dashboard-container {
+.container {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -55,13 +55,19 @@ footer {
     color: #333;
 }
 
-/* Estilos Específicos do Dashboard */
+
 .dashboard-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 1200px; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 80%;
-    padding: 40px;
+    margin: 20px auto; 
 }
 
 .card {
@@ -73,3 +79,11 @@ footer {
     width: 200px;
     text-align: center;
 }
+
+.logout-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+

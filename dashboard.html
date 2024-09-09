@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Dashboard de Vendas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Dashboard</h1>
+        <h1>Dashboard de Vendas</h1>
     </header>
     <div class="dashboard-container">
         <div class="card">
-            <h3>Seção 1</h3>
-            <p>Informações gerais...</p>
+            <h3>Total de Vendas</h3>
+            <p id="totalVendas">R$ 12.500,00</p>
         </div>
         <div class="card">
-            <h3>Seção 2</h3>
-            <p>Mais informações...</p>
+            <h3>Média de Vendas Diárias</h3>
+            <p id="mediaVendas">R$ 417,00</p>
         </div>
         <div class="card">
-            <h3>Seção 3</h3>
-            <p>Outras informações...</p>
+            <h3>Produtos Vendidos</h3>
+            <ul id="produtosVendidos">
+                <li>Produto A - 150 unidades</li>
+                <li>Produto B - 100 unidades</li>
+                <li>Produto C - 75 unidades</li>
+                <li>Produto D - 50 unidades</li>
+                <li>Produto E - 25 unidades</li>
+            </ul>
         </div>
-        <a href="index.html"><button style="width: 100px; height: 50px;">Voltar</button></a>
+        <div class="card">
+            <h3>Data Atual</h3>
+            <p id="dataAtual"></p>
+        </div>
     </div>
+    
+    <!-- Botão de Sair -->
+    <div class="logout-button-container">
+        <button id="logoutButton" onclick="sair()">Sair</button>
+    </div>
+
     <footer>
         github.com/brenoloa | contatobrenoloa@gmail.com
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
