@@ -1,3 +1,15 @@
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Lógica de validação simples
+    if (username === "admin" && password === "admin") {
+        // Redireciona para o dashboard
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Usuário ou senha incorretos.");
+    }
+}
 function gerarDados() {
     const totalVendas = Math.floor(Math.random() * 4000) + 1000;
     document.getElementById('totalVendas').innerText = "R$ " + totalVendas;
