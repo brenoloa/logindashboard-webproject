@@ -6,44 +6,64 @@
     <title>Dashboard de Vendas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="xxxx">
+<body>
     <header>
-        <h1>Dashboard de Vendas</h1>
         <center><img src="image.png" alt=""></center>
+        <h1>Dashboard de Vendas</h1>
+        <div class="user-info">
+            <p>Bem-vindo, Admin</p>
+            <button onclick="sair()">Sair</button>
+        </div>
     </header>
-    <div class="dashboard-container">
-        <div class="card">
-            <h3>Total de Vendas</h3>
-            <p id="totalVendas">R$ 12.500,00</p>
-        </div>
-        <div class="card">
-            <h3>Média de Vendas Diárias</h3>
-            <p id="mediaVendas">R$ 417,00</p>
-        </div>
-        <div class="card">
-            <h3>Produtos Vendidos</h3>
-            <ul id="produtosVendidos">
-                <li>Produto A - 1500 unidades</li>
-                <li>Produto B - 100 unidades</li>
-                <li>Produto C - 75 unidades</li>
-                <li>Produto D - 50 unidades</li>
-                <li>Produto E - 25 unidades</li>
+
+    <div class="main-container">
+        <!-- Menu Lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="mostrarResumo()">Resumo de Vendas</a></li>
+                <li><a href="#" onclick="mostrarHistorico()">Histórico de Vendas</a></li>
+                <li><a href="#" onclick="mostrarProdutos()">Produtos Vendidos</a></li>
+                <li><a href="#">Relatórios</a></li>
             </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <div class="dashboard-container">
+            <div class="card" id="resumoVendas">
+                <h3>Total de Vendas</h3>
+                <p id="totalVendas">R$ 12.500,00</p>
+            </div>
+            <div class="card" id="mediaVendasCard">
+                <h3>Média de Vendas Diárias</h3>
+                <p id="mediaVendas">R$ 417,00</p>
+            </div>
+            <div class="card" id="produtosCard">
+                <h3>Produtos Vendidos</h3>
+                <ul id="produtosVendidos">
+                    <li>Produto A - 1500 unidades</li>
+                    <li>Produto B - 100 unidades</li>
+                    <li>Produto C - 75 unidades</li>
+                    <li>Produto D - 50 unidades</li>
+                    <li>Produto E - 25 unidades</li>
+                </ul>
+            </div>
+            <div class="card" id="dataAtualCard">
+                <h3>Data Atual</h3>
+                <p id="dataAtual"></p>
+            </div>
+            <div class="card" id="historicoVendas" style="display: none;">
+                <h3>Histórico de Vendas</h3>
+                <ul id="historicoList">
+                    <!-- Histórico será gerado dinamicamente -->
+                </ul>
+            </div>
         </div>
-        <div class="card">
-            <h3>Data Atual</h3>
-            <p id="dataAtual"></p>
-        </div>
-    </div>
-    
-    <!-- Botão de Sair -->
-    <div class="logout-button-container">
-        <button id="logoutButton" onclick="sair()">Sair</button>
     </div>
 
     <footer>
         github.com/brenoloa | contatobrenoloa@gmail.com
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
