@@ -12,21 +12,20 @@
         <h1>Dashboard de Vendas</h1>
         <div class="user-info">
             <p>Bem-vindo, Admin</p>
-            <button onclick="sair()">Sair</button>
         </div>
     </header>
-
+    
     <div class="main-container">
         <!-- Menu Lateral -->
         <nav class="sidebar">
             <ul>
-                <li><a href="#" onclick="mostrarResumo()">Resumo de Vendas</a></li>
-                <li><a href="#" onclick="mostrarHistorico()">Histórico de Vendas</a></li>
-                <li><a href="#" onclick="mostrarProdutos()">Produtos Vendidos</a></li>
-                <li><a href="#">Relatórios</a></li>
+                <li><a href="#" onclick="mostrarResumo()"><img src="https://cdn-icons-png.flaticon.com/512/6080/6080829.png" alt=""></a></li>
+                <li><a href="#" onclick="mostrarHistorico()"><img src="https://cdn.icon-icons.com/icons2/2596/PNG/512/history_icon_155273.png" alt=""></a></li>
+                <li><a href="#" onclick="mostrarProdutos()"><img src="https://cdn-icons-png.flaticon.com/512/126/126311.png" alt=""></a></li>
+                <li><a href="#" onclick="mostrarHistorico()" > <img src="https://cdn-icons-png.flaticon.com/512/1380/1380341.png" alt=""></a></li>
             </ul>
         </nav>
-
+        
         <!-- Conteúdo Principal -->
         <div class="dashboard-container">
             <div class="card" id="resumoVendas">
@@ -59,9 +58,10 @@
             </div>
         </div>
     </div>
-
+    
     <footer>
-        github.com/brenoloa | contatobrenoloa@gmail.com
+        <button onclick="sair()">Sair</button>
+        <a href="https://github.com/brenoloa">GITHUB</a> | <a href="https://maito:contatobrenoloa@gmail.com">MAIL</a>
     </footer>
 
     <script src="script.js"></script>
