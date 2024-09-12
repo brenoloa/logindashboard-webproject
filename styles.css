@@ -225,3 +225,126 @@ header h1 {
         font-size: 18px;
     }
 }
+#produtosVendidos {
+    list-style-type: none; /* Remove os pontos de lista */
+    padding: 0; /* Remove o espaçamento padrão */
+}
+
+#produtosVendidos li {
+    padding: 5px 0; /* Adiciona um espaçamento entre os itens */
+    border-bottom: 1px solid #e0e0e0; /* Linha sutil entre os itens */
+}
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+    width: 220px; /* Ajuste de largura */
+    text-align: center;
+    transition: transform 0.2s ease; /* Animação ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+}
+
+.card h3 {
+    color: #333; /* Cor mais forte para o título */
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 16px; /* Tamanho do texto ajustado */
+    color: #555; /* Tom mais suave */
+}
+.sidebar ul li a {
+    padding: 15px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s; /* Efeitos suaves */
+}
+
+.sidebar ul li a:hover {
+    background-color: #607fba;
+    transform: scale(1.1); /* Aumenta levemente os ícones ao passar o mouse */
+}
+
+.sidebar ul li a img {
+    height: 30px; /* Tamanho maior dos ícones */
+    width: 30px;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background-color: #f5f5f5; /* Cor de fundo para destacar */
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer a {
+    color: #0077cc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none; /* Remove os pontos de lista */
+    padding: 0; /* Remove o espaçamento padrão */
+}
+
+ul li {
+    padding: 5px 0; /* Adiciona um espaçamento entre os itens */
+    border-bottom: 1px solid #e0e0e0; /* Linha sutil entre os itens */
+}
+#funcoesIcone1 ul, #funcoesIcone2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#funcoesIcone1 ul li, #funcoesIcone2 ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.chat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-box p {
+    margin: 10px 0; /* Pulamento de linhas entre mensagens */
+}
+
+.chat-box strong {
+    font-weight: bold; /* Deixa "Você" e "Suporte" em negrito */
+}
+
+textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}

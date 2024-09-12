@@ -23,16 +23,18 @@
                 <li><a href="#" onclick="mostrarResumo()"><img src="https://cdn-icons-png.flaticon.com/512/6080/6080829.png" alt=""></a></li>
                 <li><a href="#" onclick="mostrarHistorico()"><img src="https://cdn.icon-icons.com/icons2/2596/PNG/512/history_icon_155273.png" alt=""></a></li>
                 <li><a href="#" onclick="mostrarProdutos()"><img src="https://cdn-icons-png.flaticon.com/512/126/126311.png" alt=""></a></li>
-                <li><a href="#" onclick="mostrarHistorico()" > <img src="https://cdn-icons-png.flaticon.com/512/1380/1380341.png" alt=""></a></li>
+                <li><a href="#" onclick="mostrarHistorico()"><img src="https://cdn-icons-png.flaticon.com/512/1380/1380341.png" alt=""></a></li>
+                <li><a href="#" onclick="mostrarSuporte()"><img src="https://cdn-icons-png.flaticon.com/512/78/78925.png" alt=""></a></li>
             </ul>
         </nav>
         
         <!-- Conteúdo Principal -->
-        <div class="dashboard-container">
+        <div id="content"></div>
+
+        <div class="dashboard-container" id="dashboardContent">
             <div class="card" id="resumoVendas">
                 <h3>Total de Vendas</h3>
                 <p id="totalVendas">R$ 12.500,00</p>
-                
             </div>
             <div class="card" id="mediaVendasCard">
                 <h3>Média de Vendas Diárias</h3>
@@ -63,7 +65,7 @@
     
     <footer>
         <button onclick="sair()">Sair</button>
-        <a href="https://github.com/brenoloa">GITHUB</a> | <a href="https://maito:contatobrenoloa@gmail.com">MAIL</a>
+        <a href="https://github.com/brenoloa">GITHUB</a> | <a href="mailto:contatobrenoloa@gmail.com">MAIL</a>
     </footer>
 
     <script src="script.js"></script>
